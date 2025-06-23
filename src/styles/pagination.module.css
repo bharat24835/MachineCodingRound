@@ -1,0 +1,56 @@
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  height: 250px;
+  width: 250px;
+}
+.image {
+  height: 200px;
+  width: 200px;
+}
+.para {
+  font-size: 14px;
+  font-weight: 600;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.child1 {
+  width: 100vw;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+.btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.btn {
+  height: 30px;
+  width: 30px;
+  border: 1px solid gray;
+  background-color: lightblue;
+}
+.btn:disabled {
+  background-color: red;
+}
+.btn[data-active="true"] {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
